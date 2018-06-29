@@ -2,10 +2,12 @@
   "name": "lambda-notes",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/jesuarva/lambda-notes-app",
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.1.1",
     "ejs": "^2.6.1",
+    "gh-pages": "^1.2.0",
     "markdown-to-jsx": "^6.6.5",
     "react": "^16.3.2",
     "react-csv": "^1.0.14",
@@ -20,6 +22,8 @@
     "redux-thunk": "^2.2.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
